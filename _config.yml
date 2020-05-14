@@ -1,0 +1,49 @@
+# Site settings
+title: Corentin Hatte (Helyo Sphere)
+title_short: Corentin Hatte
+email: contact@corentin-hatte.eu
+description: >-
+  Développement Web de qualité.
+baseurl: ""
+url: ""
+twitter_username: viki53
+language: "fr"
+timezone: "Europe/Paris"
+encoding: UTF-8
+permalink: /:year/:month/:day/:title:output_ext
+excerpt_separator: ---
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - day
+    - categories
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    category: '/categorie/:name/'
+
+feed:
+  path: atom.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

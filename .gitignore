@@ -1,2 +1,10 @@
+# System files
 .DS_Store
 Thumbs.db
+
+# Jekyll
+_drafts/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
