@@ -70,17 +70,18 @@ body {
 	transition: text-shadow .23s linear;
 }
 #hero > h1 {
-	font-size: 3vw;
+	font-size: 5.8vw;
 	color: var(--color-text);
 }
 #hero > h2 {
 	font-size: 3.9vw;
+	line-height: 1.2em;
 	color: #fff;
 }
 
 @media (orientation: portrait) {
 	#hero > h1 {
-		font-size: 7.4vw;
+		font-size: 9.4vw;
 	}
 	#hero > h2 {
 		font-size: 9.3vw;
