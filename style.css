@@ -49,17 +49,21 @@ body {
 	justify-content: center;
 	flex-flow: column;
 	text-align: center;
+}
+#hero.orange {
+	--color-hero-bg: var(--color-helyo-orange);
+}
+
+#hero,
+footer {
 	background-image: url(./images/background-pattern.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	--color-hero-bg: var(--color-helyo-blue);
 }
-#hero.orange {
-	--color-hero-bg: var(--color-helyo-orange);
-}
-
-#hero::before {
+#hero::before,
+footer::before {
 	content: '';
 	position: absolute;
 	z-index: 0;
@@ -74,7 +78,8 @@ body {
 	transition: background-color .23s linear;
 }
 
-#hero > * {
+#hero > *,
+footer > * {
 	position: relative;
 	z-index: 1;
 	flex: 0 1 auto;
@@ -216,4 +221,5 @@ footer {
 	z-index: 0;
 	padding: 1rem 0;
 	text-align: center;
+	color: #fff;
 }
