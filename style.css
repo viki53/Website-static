@@ -54,6 +54,9 @@ body {
 	background-position: center;
 	--color-hero-bg: var(--color-helyo-blue);
 }
+#hero.orange {
+	--color-hero-bg: var(--color-helyo-orange);
+}
 
 #hero::before {
 	content: '';
@@ -69,9 +72,6 @@ body {
 	mix-blend-mode: multiply;
 	transition: background-color .23s linear;
 }
-#hero.orange {
-	--color-hero-bg: var(--color-helyo-orange);
-}
 
 #hero > * {
 	position: relative;
@@ -83,6 +83,7 @@ body {
 #hero > h1 {
 	font-size: 5.8vw;
 	color: var(--color-text);
+	margin-top: 1em;
 }
 #hero > h2 {
 	font-size: 3.9vw;
@@ -91,6 +92,7 @@ body {
 }
 #hero > h3 {
 	color: #fff;
+	margin-bottom: 2em;
 }
 #hero > h3 > a {
 	display: inline-block;
@@ -98,7 +100,7 @@ body {
 	border: 1px solid #fff;
 	border-radius: 3px;
 	color: #fff;
-	width: 7em;
+	min-width: 6.5em;
 	text-decoration: none;
 }
 #hero > h3 > a:hover,
