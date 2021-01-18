@@ -139,13 +139,22 @@ main {
 main article {
 	margin: 5rem auto;
 }
-main h1 {
-	padding-bottom: .5em;
+main details {
+	display: block;
+	margin: 1em 0 .5em;
+}
+main summary {
+	overflow: visible;
 	border-bottom: 1px solid var(--color-helyo-orange);
 }
-main h1::before {
-	content: '⤳ ';
+main summary::marker {
+	/* content: '⤳ '; */
 	color: var(--color-helyo-orange);
+}
+main h1 {
+	display: inline-block;
+	margin: 0;
+	padding-bottom: .5em;
 }
 main h2 {
 	padding-bottom: .25em;
