@@ -146,6 +146,7 @@ main details {
 main summary {
 	overflow: visible;
 	border-bottom: 1px solid var(--color-helyo-orange);
+	cursor: default;
 }
 main summary::marker {
 	/* content: '⤳ '; */
