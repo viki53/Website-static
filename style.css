@@ -145,17 +145,27 @@ main details {
 }
 main summary {
 	overflow: visible;
-	border-bottom: 1px solid var(--color-helyo-orange);
 	cursor: default;
+	list-style: none;
 }
 main summary::marker {
-	/* content: '⤳ '; */
-	color: var(--color-helyo-orange);
+	display: none;
 }
-main h1 {
-	display: inline-block;
+main summary h1 {
 	margin: 0;
 	padding-bottom: .5em;
+	border-bottom: 1px solid var(--color-helyo-orange);
+}
+main details summary h1::before {
+	content: '▶︎';
+	flex: 0 0 1em;
+	color: var(--color-helyo-orange);
+	font-size: .5em;
+	margin-right: .5em;
+	vertical-align: middle;
+}
+main details[open] summary h1::before {
+	content: '▼';
 }
 main h2 {
 	padding-bottom: .25em;
