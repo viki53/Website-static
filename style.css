@@ -28,6 +28,17 @@ body {
 	line-height: 2em;
 }
 
+.sr-only {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
 #hero {
 	height: 100vh;
 	position: relative;
@@ -77,6 +88,22 @@ body {
 	font-size: 3.9vw;
 	line-height: 1.2em;
 	color: #fff;
+}
+#hero > h3 {
+	color: #fff;
+}
+#hero > h3 > a {
+	display: inline-block;
+	padding: .25em;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	width: 7em;
+	text-decoration: none;
+}
+#hero > h3 > a:hover,
+#hero > h3 > a:focus {
+	text-decoration: underline;
 }
 
 @media (orientation: portrait) {
