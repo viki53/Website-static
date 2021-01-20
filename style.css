@@ -209,6 +209,14 @@ main details summary h1::before {
 main details[open] summary h1::before {
 	content: '▼';
 }
+main details:not([open]) summary::after {
+	content: 'Cliquer pour lire la suite…';
+	display: block;
+	text-align: right;
+	font-family: var(--font-titles);
+	font-style: italic;
+	color: var(--color-helyo-blue);
+}
 main h2 {
 	padding-bottom: .25em;
 	border-bottom: 1px dashed var(--color-helyo-orange);
