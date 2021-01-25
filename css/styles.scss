@@ -40,23 +40,38 @@ main {
 	z-index: 5;
 	box-shadow: 0 0 5px var(--color-text);
 	background-color: #fafaf7;
+
+	article {
+		margin: 5rem auto;
+		
+		h1 {
+			margin: 0;
+			padding-bottom: .5em;
+			border-bottom: 1px solid var(--color-helyo-orange);
+		}
+	}
+	h2 {
+		padding-bottom: .25em;
+		border-bottom: 1px dashed var(--color-helyo-orange);
+	}
 }
 .container {
 	max-width: 60rem;
 	margin: 2rem auto;
 	padding: 0 .5rem;
-}
-main article {
-	margin: 5rem auto;
-}
-main article h1 {
-	margin: 0;
-	padding-bottom: .5em;
-	border-bottom: 1px solid var(--color-helyo-orange);
-}
-main h2 {
-	padding-bottom: .25em;
-	border-bottom: 1px dashed var(--color-helyo-orange);
+
+	& > header {
+		& > h1 {
+			margin: 0;
+			padding-bottom: .5em;
+			border-bottom: 1px solid var(--color-helyo-orange);
+		}
+		& > p.intro {
+			font-family: var(--font-titles);
+			font-size: 1.3em;
+			font-style: italic;
+		}
+	}
 }
 
 @import "footer.scss";

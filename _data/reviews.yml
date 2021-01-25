@@ -1,3 +1,14 @@
+- author:
+    name: Jérémy Bensimon
+    company: Rofim
+  title: Corentin nous a grandement aidé à migrer une application avec beaucoup de dette technique
+  text: |
+    Corentin nous a grandement aidé à migrer une application avec beaucoup de dette technique depuis un serveur on-premises simple vers AWS avec des contraintes de sécurité HDS très poussées, et des contraintes d'horizontalité que cette application ne supportait pas initialement.
+
+    Il a été très à l'écoute, très porté sur la résolution des problèmes, non seulement d'un point de vue macro mais aussi dans les détails du code. Initialement appelé pour ses compétences devops, il s'est aussi révélé meilleur programmeur que d'autres consultants !
+
+    Nous continuons régulièrement à faire appel à ses services.
+
 - author: 
     name: Johann Barbier
     company: Evolution XY
@@ -22,13 +33,3 @@
 
     Il se révèle également très tout terrain lorsqu'il s'agit d'enfiler le costume devops backend, dans des environnements cloud comme AWS ou baremetal.
 
-- author:
-    name: Jérémy Bensimon
-    company: Rofim
-  title: Corentin nous a grandement aidé à migrer une application avec beaucoup de dette technique
-  text: |
-    Corentin nous a grandement aidé à migrer une application avec beaucoup de dette technique depuis un serveur on-premises simple vers AWS avec des contraintes de sécurité HDS très poussées, et des contraintes d'horizontalité que cette application ne supportait pas initialement.
-
-    Il a été très à l'écoute, très porté sur la résolution des problèmes, non seulement d'un point de vue macro mais aussi dans les détails du code. Initialement appelé pour ses compétences devops, il s'est aussi révélé meilleur programmeur que d'autres consultants !
-
-    Nous continuons régulièrement à faire appel à ses services.

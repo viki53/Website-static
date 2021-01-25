@@ -15,7 +15,7 @@
 	<link rel="icon" type="image/png" href="/images/logo-helyo.png" />
 	<link rel="icon" type="image/svg+xml" href="/images/logo-helyo.svg" />
 
-	<link rel="stylesheet" href="{{ '/css/styles.css' | prepend:site.github.url }}">
+	<link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
 
 	<link rel="canonical" href="{{ page.url | prepend:site.github.url }}" />
 
@@ -61,6 +61,6 @@
 	</main>
 
 	{% include footer.html %}
-	<script src="{{ '/js/orange.js' | prepend:site.github.url }}" async></script>
+	<script src="{{ '/js/orange.js' | relative_url }}" async></script>
 </body>
 </html>

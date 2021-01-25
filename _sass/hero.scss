@@ -13,6 +13,10 @@
 		font-size: 5.8vw;
 		color: var(--color-text);
 		margin-top: 1em;
+
+		& > a:not(:hover):not(:focus) {
+			text-decoration: none;
+		}
 	}
 	& > h2 {
 		font-size: 3.9vw;

@@ -4,15 +4,16 @@ title: "Témoignages clients"
 ---
 <div class="container">
 	<header>
-		<h1></h1>
+		<h1>Témoignages et avis</h1>
+		<p class="intro">Qui peut témoigner de mes compétences, si ce n'est des clients et collègues ?</p>
 	</header>
 
 	{% for review in site.data.reviews %}
 	<article class="review">
 		<header>
-			<h1>
+			<h2>
 				<span>{{ review.author.name }}</span>{% if review.author.company %}, <span>{{ review.author.company }}</span>{% endif %}
-			</h1>
+			</h2>
 		</header>
 		
 		<blockquote>
