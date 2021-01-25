@@ -1,0 +1,34 @@
+- author: 
+    name: Johann Barbier
+    company: Evolution XY
+  title: Corentin est un jeune consultant brillant
+  text: |
+    Corentin est un jeune consultant brillant. Passionné et passionnant, il est extrêmement efficace !!! Donnez lui 4 jours pour une mission, il vous la réalisera en 2.
+
+    Il est taillé pour des projets complexes qui demandent du rythme; le plus dur c'est de l'alimenter au fil de l'eau.
+
+    Parfait pour des projets d'innovation.
+
+- author: 
+   name: Eric Barault
+   company: Carbip
+  title: Très tout terrain avec un code clair et pérenne
+  text: |
+    Corentin a été le 1er salarié de Carbip quand je l'ai recruté en janvier 2016. Nous avons franchi ensemble de nombreux pivots tant techniques que marketing.
+
+    Il a su rebondir et rester motivé à nos côtés à chaque reprise sans pour autant mettre à défaut son esprit critique et sa lucidité sur le produit que nous développions.
+
+    Du point de vue technique, sur ses fondamentaux, c'est à dire le front, l'ergonomie et les API, il sait aller à l'essentiel avec un code clair et pérenne.
+
+    Il se révèle également très tout terrain lorsqu'il s'agit d'enfiler le costume devops backend, dans des environnements cloud comme AWS ou baremetal.
+
+- author:
+    name: Jérémy Bensimon
+    company: Rofim
+  title: Corentin nous a grandement aidé à migrer une application avec beaucoup de dette technique
+  text: |
+    Corentin nous a grandement aidé à migrer une application avec beaucoup de dette technique depuis un serveur on-premises simple vers AWS avec des contraintes de sécurité HDS très poussées, et des contraintes d'horizontalité que cette application ne supportait pas initialement.
+
+    Il a été très à l'écoute, très porté sur la résolution des problèmes, non seulement d'un point de vue macro mais aussi dans les détails du code. Initialement appelé pour ses compétences devops, il s'est aussi révélé meilleur programmeur que d'autres consultants !
+
+    Nous continuons régulièrement à faire appel à ses services.

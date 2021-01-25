@@ -1,0 +1,48 @@
+---
+layout: default
+title: "Témoignages clients"
+---
+<div class="container">
+	<header>
+		<h1></h1>
+	</header>
+
+	{% for review in site.data.reviews %}
+	<article class="review">
+		<header>
+			<h1>
+				<span>{{ review.author.name }}</span>{% if review.author.company %}, <span>{{ review.author.company }}</span>{% endif %}
+			</h1>
+		</header>
+		
+		<blockquote>
+			{{ review.text | markdownify }}
+		</blockquote>
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org/",
+				"@type": "Review",
+				"itemReviewed": {
+					"@type": "Organization",
+					"image": "{{ '/images/avatar.jpg' | prepend:site.github.url }}",
+					"name": "{{ site.company_name }}",
+					"email": "{{ site.email }}",
+					"telephone": "{{ site.phone }}"
+				},
+				"author": {
+					"@type": "Person",
+					"name": "{{ review.author.name | smart_quotes }}",
+					"memberOf": {
+						"@type": "Organization",
+						"name": "{{ review.author.company | smart_quotes }}"
+					}
+				},
+				"name": "{{ review.title }}",
+				"reviewBody": "{{ review.text | smart_quotes }}"
+			}
+		</script>
+
+	</article>
+	{% endfor %}
+</div>
