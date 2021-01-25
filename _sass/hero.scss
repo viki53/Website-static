@@ -1,7 +1,7 @@
 #hero {
 	position: sticky;
 	top: 0;
-	z-index: 0;
+	z-index: 1;
 	display: flex;
 	padding: 2rem .5rem;
 	align-items: center;
@@ -54,11 +54,16 @@
 
 #hero,
 footer {
+	position: sticky;
 	background-image: url('../images/background-pattern.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	--color-hero-bg: var(--color-helyo-blue);
+
+	@media screen and (max-height: 41rem) {
+		position: relative;
+	}
 	
 	&.orange {
 		--color-hero-bg: var(--color-helyo-orange);
