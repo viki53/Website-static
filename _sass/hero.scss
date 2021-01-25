@@ -14,8 +14,10 @@
 		line-height: 1.2em;
 		color: #fff;
 		
-		& > a:not(:hover):not(:focus) {
-			text-decoration: none;
+		& > a {
+			&:not(:hover):not(:focus) {
+				text-decoration: none;
+			}
 		}
 	}
 	& > h2 {
