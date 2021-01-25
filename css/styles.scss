@@ -48,41 +48,10 @@ main {
 main article {
 	margin: 5rem auto;
 }
-main details {
-	display: block;
-	margin: 1em 0 .5em;
-}
-main summary {
-	overflow: visible;
-	cursor: default;
-	list-style: none;
-}
-main summary::marker {
-	display: none;
-}
-main summary h1 {
+main article h1 {
 	margin: 0;
 	padding-bottom: .5em;
 	border-bottom: 1px solid var(--color-helyo-orange);
-}
-main details summary h1::before {
-	content: '▶︎';
-	flex: 0 0 1em;
-	color: var(--color-helyo-orange);
-	font-size: .5em;
-	margin-right: .5em;
-	vertical-align: middle;
-}
-main details[open] summary h1::before {
-	content: '▼';
-}
-main details:not([open]) summary::after {
-	content: 'Cliquer pour lire la suite…';
-	display: block;
-	text-align: right;
-	font-family: var(--font-titles);
-	font-style: italic;
-	color: var(--color-helyo-blue);
 }
 main h2 {
 	padding-bottom: .25em;
