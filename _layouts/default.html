@@ -17,7 +17,7 @@
 
 	<link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
 
-	<link rel="canonical" href="{{ page.url | prepend:site.github.url }}" />
+	<link rel="canonical" href="{{ page.url | absolute_url }}" />
 
 	{% feed_meta %}
 
@@ -25,11 +25,11 @@
 	<meta itemprop="og:locale" content="{{ site.language }}">
 	
 	<meta itemprop="og:title" content="{{ page.title | default:site.title }}">
-	<meta itemprop="og:url" content="{{ page.url | prepend:site.github.url }}">
+	<meta itemprop="og:url" content="{{ page.url | absolute_url }}">
 	
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="{{ page.title | default:site.title }}">
-	<meta name="twitter:url" content="{{ page.url | prepend:site.github.url }}">
+	<meta name="twitter:url" content="{{ page.url | absolute_url }}">
 	<meta name="twitter:site" content="{{ site.twitter_username }}">
 
 	{% if page.excerpt %}
@@ -43,11 +43,11 @@
 	{% endif %}
 
 	{% if page.cover %}
-	<meta itemprop="og:image" content="{{ page.cover | prepend:site.github.url }}">
-	<meta name="twitter:image" content="{{ page.cover | prepend:site.github.url }}">
+	<meta itemprop="og:image" content="{{ page.cover | absolute_url }}">
+	<meta name="twitter:image" content="{{ page.cover | absolute_url }}">
 	{% else %}
-	<meta itemprop="og:image" content="{{ '/images/logo-helyo.png' | prepend:site.github.url }}">
-	<meta name="twitter:image" content="{{ '/images/logo-helyo.png' | prepend:site.github.url }}">
+	<meta itemprop="og:image" content="{{ '/images/logo-helyo.png' | absolute_url }}">
+	<meta name="twitter:image" content="{{ '/images/logo-helyo.png' | absolute_url }}">
 	{% endif %}
 
 	{% include matomo.html %}
