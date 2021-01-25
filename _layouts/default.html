@@ -1,0 +1,66 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	{% if page.title %}
+	<title>{{ page.title }} | {{ site.title }}</title>
+	{% else %}
+	<title>{{ site.title }}</title>
+	{% endif %}
+
+	<link rel="icon" type="image/png" href="/images/logo-helyo.png" />
+	<link rel="icon" type="image/svg+xml" href="/images/logo-helyo.svg" />
+
+	<link rel="stylesheet" href="{{ '/css/styles.css' | prepend:site.github.url }}">
+
+	<link rel="canonical" href="{{ page.url | prepend:site.github.url }}" />
+
+	{% feed_meta %}
+
+	<meta itemprop="og:site_name" content="{{ site.title }}">
+	<meta itemprop="og:locale" content="{{ site.language }}">
+	
+	<meta itemprop="og:title" content="{{ page.title | default:site.title }}">
+	<meta itemprop="og:url" content="{{ page.url | prepend:site.github.url }}">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="{{ page.title | default:site.title }}">
+	<meta name="twitter:url" content="{{ page.url | prepend:site.github.url }}">
+	<meta name="twitter:site" content="{{ site.twitter_username }}">
+
+	{% if page.excerpt %}
+	<meta name="description" content="{{ page.excerpt | strip_html | normalize_whitespace }}">
+	<meta itemprop="og:description" content="{{ page.excerpt | strip_html | normalize_whitespace }}">
+	<meta name="twitter:description" content="{{ page.excerpt | strip_html | normalize_whitespace }}">
+	{% else %}
+	<meta name="description" content="{{ site.description | strip_html | normalize_whitespace }}">
+	<meta itemprop="og:description" content="{{ site.description | strip_html | normalize_whitespace }}">
+	<meta name="twitter:description" content="{{ site.description | strip_html | normalize_whitespace }}">
+	{% endif %}
+
+	{% if page.cover %}
+	<meta itemprop="og:image" content="{{ page.cover | prepend:site.github.url }}">
+	<meta name="twitter:image" content="{{ page.cover | prepend:site.github.url }}">
+	{% else %}
+	<meta itemprop="og:image" content="{{ '/images/avatar.jpg' | prepend:site.github.url }}">
+	<meta name="twitter:image" content="{{ '/images/avatar.jpg' | prepend:site.github.url }}">
+	{% endif %}
+
+	{% include matomo.html %}
+</head>
+
+<body>
+	{% include header.html %}
+
+	<main>
+		{{ content }}
+	</main>
+
+	{% include footer.html %}
+	<script src="{{ '/js/orange.js' | prepend:site.github.url }}" async></script>
+</body>
+</html>

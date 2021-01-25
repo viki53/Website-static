@@ -1,0 +1,92 @@
+---
+---
+@charset "utf-8";
+
+:root {
+	--color-text: #292f36;
+	--color-helyo-blue: #1786a3;
+	--color-helyo-orange: #ff7f49;
+
+	--font-titles: 'San Francisco', 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Segoe UI', 'Tahoma', 'Roboto', 'Droid Sans', sans-serif;
+	--font-text: Georgia, Times, 'Times New Roman', serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fafaf7;
+	color: var(--color-text);
+}
+
+body {
+	min-height: 100vh;
+	padding: 0;
+	margin: auto;
+	font-family: var(--font-text);
+	line-height: 2em;
+}
+
+@import "./typography.scss";
+@import "./hero.scss";
+
+main {
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+	box-shadow: 0 0 5px var(--color-text);
+	background-color: #fafaf7;
+}
+.container {
+	max-width: 60rem;
+	margin: 2rem auto;
+	padding: 0 .5rem;
+}
+main article {
+	margin: 5rem auto;
+}
+main details {
+	display: block;
+	margin: 1em 0 .5em;
+}
+main summary {
+	overflow: visible;
+	cursor: default;
+	list-style: none;
+}
+main summary::marker {
+	display: none;
+}
+main summary h1 {
+	margin: 0;
+	padding-bottom: .5em;
+	border-bottom: 1px solid var(--color-helyo-orange);
+}
+main details summary h1::before {
+	content: '▶︎';
+	flex: 0 0 1em;
+	color: var(--color-helyo-orange);
+	font-size: .5em;
+	margin-right: .5em;
+	vertical-align: middle;
+}
+main details[open] summary h1::before {
+	content: '▼';
+}
+main details:not([open]) summary::after {
+	content: 'Cliquer pour lire la suite…';
+	display: block;
+	text-align: right;
+	font-family: var(--font-titles);
+	font-style: italic;
+	color: var(--color-helyo-blue);
+}
+main h2 {
+	padding-bottom: .25em;
+	border-bottom: 1px dashed var(--color-helyo-orange);
+}
+
+@import "footer.scss";

@@ -1,0 +1,14 @@
+
+#footer {
+	display: block;
+	position: sticky;
+	bottom: 0;
+	z-index: 0;
+	padding: 1rem 0;
+	text-align: center;
+	color: #fff;
+}
+
+#footer.orange {
+	--color-hero-bg: var(--color-helyo-orange);
+}
