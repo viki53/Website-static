@@ -11,9 +11,9 @@
 
 	& > h1 {
 		font-size: 5.8vw;
-		color: var(--color-text);
-		margin-top: 1em;
-
+		line-height: 1.2em;
+		color: #fff;
+		
 		& > a:not(:hover):not(:focus) {
 			text-decoration: none;
 		}
