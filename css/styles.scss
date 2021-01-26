@@ -31,15 +31,22 @@ body {
 }
 
 @import "./typography.scss";
+@import "./container.scss";
 @import "./hero.scss";
+@import "./navbar.scss";
 @import "./reviews.scss";
+@import "./footer.scss";
 
 main {
 	overflow: hidden;
 	position: relative;
 	z-index: 5;
-	box-shadow: 0 0 5px var(--color-text);
 	background-color: #fafaf7;
+
+	.container {
+		margin: 2rem auto;
+		padding: 0 .5rem;
+	}
 
 	article,
 	section {
@@ -62,25 +69,3 @@ main {
 		border-bottom: 1px dashed var(--color-helyo-orange);
 	}
 }
-
-.container {
-	display: block;
-	max-width: 50rem;
-	margin: 2rem auto;
-	padding: 0 .5rem;
-
-	& > header {
-		& > h1 {
-			margin: 0;
-			padding-bottom: .5em;
-			border-bottom: 1px solid var(--color-helyo-orange);
-		}
-		& > p.intro {
-			font-family: var(--font-titles);
-			font-size: 1.3em;
-			font-style: italic;
-		}
-	}
-}
-
-@import "footer.scss";
