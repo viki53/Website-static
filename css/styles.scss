@@ -42,6 +42,7 @@ main {
 	position: relative;
 	z-index: 5;
 	background-color: #fafaf7;
+	min-height: calc(100vh - 3rem - 8rem);
 
 	.container {
 		margin: 2rem auto;
