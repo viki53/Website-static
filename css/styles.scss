@@ -44,6 +44,10 @@ main {
 	background-color: #fafaf7;
 	min-height: calc(100vh - 3rem - 8rem);
 
+	#hero + & {
+		min-height: calc(100vh - 3rem - 13rem - 8rem);
+	}
+
 	.container {
 		margin: 2rem auto;
 		padding: 0 .5rem;
