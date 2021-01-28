@@ -4,7 +4,7 @@
 	flex-wrap: wrap;
 	margin: 0 -.5rem;
 
-	@media screen and (min-width: 60rem) {
+	@media screen and (min-width: 50rem) {
 		margin: 0 -1rem;
 	}
 
@@ -14,7 +14,7 @@
 		flex-direction: column;
 		padding: .5rem;
 
-		@media screen and (min-width: 60rem) {
+		@media screen and (min-width: 50rem) {
 			flex-basis: calc(50% - 2rem);
 			padding: 1rem;
 		}
