@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-<div class="container">
+<div class="container wide">
 	<header>
 		<h1>Développeur Web freelance depuis 2011</h1>
 
@@ -12,48 +12,66 @@ layout: home
 		<p>J'ai passé fin 2017 la certification <acronym title="Open Quality Standard">Opquast</acronym> <a href="https://directory.opquast.com/fr/certificat/YP73A0" target="_blank" rel="noopener noreferrer"><strong>Maîtrise de la qualité en projet Web</strong></a> et vous assurer que votre projet est ainsi entre des mains expertes.</p>
 	</header>
 
-	<article id="mes-services">
-		<h1>Mes services</h1>
-		
-		<p>Pour vous assurer une prise en charge professionnelle et de qualité, je mets à disposition les services suivants en fonction de vos besoins :</p>
-		
-		<ul>
-			<li>Conseil</li>
-			<li>Développement</li>
-			<li>Formation</li>
-			<li>Outillage</li>
-			<li>Suivi de projet</li>
-			<li>Audit de livrables</li>
-		</ul>
+	<div class="grid">
+		<div class="cell">
+			<article class="card" id="mes-services">
+				<header class="card-header"><h1>Mes services</h1></header>
+				
+				<div class="card-content">
+					<p>Pour vous assurer une prise en charge professionnelle et de qualité, je mets à disposition les services suivants en fonction de vos besoins :</p>
+					
+					<ul>
+						<li>Conseil</li>
+						<li>Développement</li>
+						<li>Formation</li>
+						<li>Outillage</li>
+						<li>Suivi de projet</li>
+						<li>Audit de livrables</li>
+					</ul>
 
-		<p>De PHP à Node.js. De Laravel à Express. De MariaDB/MySQL à MongoDB…</p>
+					<p>De PHP à Node.js. De Laravel à Express. De MariaDB/MySQL à MongoDB…</p>
+				</div>
 
-		<p><a href="{{ '/services-developpement-web.html' | relative_url }}" class="more-info">Plus de détails</a></p>
-	</article>
+				<div class="card-footer"><a href="{{ '/services-developpement-web.html' | relative_url }}" class="more-info">Plus de détails</a></div>
+			</article>
+		</div>
 
-	<article id="la-qualite-web">
-		<h1>Qu'est-ce que la qualité Web ?</h1>
+		<div class="cell">
+			<article class="card" id="la-qualite-web">
+				<header class="card-header"><h1>Qu'est-ce que la qualité Web ?</h1></header>
 
-		<p>Il s'agit de s'assurer que l'<em>utilisateur final</em> d'un site ou d'une application trouve dont il/elle a besoin, avec un <em>minimum de frictions</em>, et de faire en sorte que l'ensemble du parcours soit optimisé, <em>en amont comme en aval</em> de sa visite.</p>
+				<div class="card-content">
+					<p>Il s'agit de s'assurer que l'<em>utilisateur final</em> d'un site ou d'une application trouve dont il/elle a besoin, avec un <em>minimum de frictions</em>, et de faire en sorte que l'ensemble du parcours soit optimisé, <em>en amont comme en aval</em> de sa visite.</p>
+				</div>
 
-		<p><a href="{{ '/qualite-web.html' | relative_url }}" class="more-info">Plus d'informations</a></p>
-	</article>
+				<div class="card-footer"><a href="{{ '/qualite-web.html' | relative_url }}" class="more-info">Plus d'informations</a></div>
+			</article>
+		</div>
 
-	<article id="profil-contact">
-		<h1>Mon profil</h1>
+		<div class="cell">
+			<article class="card" id="profil-contact">
+				<header class="card-header"><h1>Mon profil</h1></header>
 
-		<p>Vous pouvez retrouver mon parcours détaillé sur <a href="https://www.malt.fr/profile/corentinhatte" target="_blank" rel="noopener noreferrer">ma page Malt</a>.</p>
-		
-		<p>Pour voir à quoi ressemble mon code vous pouvez parcourir <a href="https://github.com/viki53" target="_blank" rel="noopener noreferrer">mon profil GitHub</a>.</p>
+				<div class="card-content">
+					<p>Vous pouvez retrouver mon parcours détaillé sur <a href="https://www.malt.fr/profile/corentinhatte" target="_blank" rel="noopener noreferrer">ma page Malt</a>.</p>
+					
+					<p>Pour voir à quoi ressemble mon code vous pouvez parcourir <a href="https://github.com/viki53" target="_blank" rel="noopener noreferrer">mon profil GitHub</a>.</p>
 
-		<p>Vous pouvez également me contacter directement par <a href="mailto:{{ site.email }}" rel="noindex nofollow">email</a> ou <a href="tel:{{ site.phone }}" rel="noindex nofollow">téléphone</a>.</p>
-	</article>
+					<p>Vous pouvez également me contacter directement par <a href="mailto:{{ site.email }}" rel="noindex nofollow">email</a> ou <a href="tel:{{ site.phone }}" rel="noindex nofollow">téléphone</a>.</p>
+				</div>
+			</article>
+		</div>
 
-	<article id="encore-un-doute">
-		<h1>Encore un doute ?</h1>
-		
-		<p>Mes clients et collègues peuvent témoigner de mes compétences !</p>
+		<div class="cell">
+				<article class="card" id="encore-un-doute">
+				<header class="card-header"><h1>Encore un doute ?</h1></header>
+				
+				<div class="card-content">
+					<p>Mes clients et collègues peuvent témoigner de mes compétences !</p>
+				</div>
 
-		<p><a href="{{ '/avis-temoignages-clients.html' | relative_url }}" class="more-info">Avis et témoignages</a></p>
-	</article>
+				<div class="card-footer"><a href="{{ '/avis-temoignages-clients.html' | relative_url }}" class="more-info">Avis et témoignages</a></div>
+			</article>
+		</div>
+	</div>
 </div>

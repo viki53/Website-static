@@ -4,6 +4,8 @@
 
 :root {
 	--color-text: #292f36;
+	--color-bg: #fafaf7;
+	--color-shadow: #acacac;
 	--color-helyo-blue: #1786a3;
 	--color-helyo-orange: #ff7f49;
 
@@ -18,7 +20,7 @@
 }
 
 html {
-	background-color: #fafaf7;
+	background-color: var(--color-bg);
 	color: var(--color-text);
 }
 
@@ -34,6 +36,8 @@ body {
 @import "./container.scss";
 @import "./hero.scss";
 @import "./navbar.scss";
+@import "./grid.scss";
+@import "./card.scss";
 @import "./reviews.scss";
 @import "./footer.scss";
 

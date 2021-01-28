@@ -9,14 +9,14 @@ title: "Témoignages et avis"
 	</header>
 
 	{% for review in site.data.reviews %}
-	<article class="review">
-		<header>
+	<article class="card review">
+		<header class="card-header">
 			<h2>
 				<span>{{ review.author.name }}</span>{% if review.author.company %}, <span>{{ review.author.company }}</span>{% endif %}
 			</h2>
 		</header>
 		
-		<blockquote>
+		<blockquote class="card-content">
 			{{ review.text | markdownify }}
 		</blockquote>
 
