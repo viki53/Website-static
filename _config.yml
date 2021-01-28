@@ -1,9 +1,9 @@
 # Site settings
-title: Corentin Hatte (Helyo Sphere)
-title_short: Corentin Hatte
-company_name: Helyo Sphere
-email: prospect@corentin-hatte.eu
-phone: +33665424497
+title: "Corentin Hatte (Helyo Sphere)"
+title_short: "Corentin Hatte"
+company_name: "Helyo Sphere"
+email: "prospect@corentin-hatte.eu"
+phone: "+33665424497"
 description: >-
   Développeur Web freelance à Rennes (Bretagne), expert Opquast Maîtrise de la qualité Web
 baseurl: ""
