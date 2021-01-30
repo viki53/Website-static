@@ -11,9 +11,9 @@ title: "Témoignages et avis"
 	{% for review in site.data.reviews %}
 	<article class="card review">
 		<header class="card-header">
-			<h2>
+			<h1>
 				<span>{{ review.author.name }}</span>{% if review.author.company %}, <span>{{ review.author.company }}</span>{% endif %}
-			</h2>
+			</h1>
 		</header>
 		
 		<blockquote class="card-content">
