@@ -45,10 +45,10 @@ main {
 	position: relative;
 	z-index: 5;
 	background-color: #fafaf7;
-	min-height: calc(100vh - 3rem - 8rem);
+	min-height: calc(100vh - 3rem - 10.5rem);
 
 	#hero + & {
-		min-height: calc(100vh - 3rem - 13rem - 8rem);
+		min-height: calc(100vh - 3rem - 13rem - 10.5rem);
 	}
 
 	.container {
