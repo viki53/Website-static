@@ -53,10 +53,6 @@
 			&.phone::before {
 				content: '📞';
 			}
-
-			& > span {
-				@extend .sr-only;
-			}
 		}
 	}
 
