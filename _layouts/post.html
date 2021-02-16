@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<article id="main" class="post" itemscope itemtype="https://schema.org/BlogPosting">
+	<div class="container">
+		<div class="card">
+			<header class="card-header post-title">
+				<h1>
+					<a href="{{ page.url | relative_url }}" itemprop="headline">{{ page.title }}</a>
+				</h1>
+			</header>
+
+			<main class="card-content post-content" itemprop="articleBody">
+				{{ page.content }}
+			</main>
+
+			<footer class="card-footer post-details">
+				<p title="Date de publication">
+					Article publié le <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date:"%d" }} {% include date-month-localized.html date=page.date %} {{ page.date | date:"%Y" }}</time>.
+				</p>
+
+				<p>
+					Partager :
+					<a class="share-button" href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | uri_escape }}&via={{ site.twitter_username | uri_escape }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer" title="Partager cet article sur Twitter">Twitter</a>
+					<a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | uri_escape }}&t={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer" title="Partager cet article sur Facebook">Facebook</a>
+				</p>
+			</footer>
+		</div>
+	</div>
+</article>
+
+{% include footer.html %}

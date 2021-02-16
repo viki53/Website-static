@@ -15,8 +15,17 @@
 		padding: .5rem;
 
 		@media screen and (min-width: 50rem) {
-			flex-basis: calc(50% - 2rem);
+			flex-basis: 50%;
 			padding: 1rem;
+		}
+	}
+
+	&.forced {
+		.cell {
+			@media screen and (min-width: 50rem) {
+				flex-shrink: 0;
+				flex-grow: 0;
+			}
 		}
 	}
 }

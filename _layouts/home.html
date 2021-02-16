@@ -3,10 +3,50 @@ layout: default
 ---
 
 {% include navbar.html %}
-{% include hero.html %}
 
-<main>
-	{{ content }}
-</main>
+<header id="hero" itemscope itemtype="https://schema.org/Organization">
+	<h1>
+		<a href="{{ '/' | relative_url }}" itemprop="alternateName">{{ site.title_short }}</a>
+		<span class="sr-only" itemprop="name">Helyo Sphere</span>
+	</h1>
+
+	<h2 itemprop="description">Développement Web de qualité.</h2>
+
+	<h3>
+		<strong class="sr-only">Me contacter :</strong>
+		<a href="mailto:{{ site.email }}" itemprop="email" rel="noindex nofollow" title="Envoyez-moi un courrier électronique">email</a>
+		<a href="tel:{{ site.phone }}" itemprop="telephone" rel="noindex nofollow" title="Passez-moi un coup de fil">téléphone</a>
+	</h3>
+</header>
+
+<div id="main">
+	<main>
+		{{ content }}
+	</main>
+
+	{% if paginator.posts %}
+	<aside class="container">
+		<h1>Derniers articles</h1>
+
+		<div class="grid forced">
+			{% for post in paginator.posts %}
+			<div class="cell">
+				<article class="card" itemscope itemtype="https://schema.org/BlogPosting">
+					<header class="card-header">
+						<h2><a href="{{ post.url }}" itemprop="headline">{{ post.title }}</a></h2>
+					</header>
+					<div class="card-content" itemprop="description">
+						{{ post.excerpt }}
+					</div>
+					<footer class="card-footer">
+						<a href="{{ post.url }}" class="more-info">Lire l'article</a>
+					</footer>
+				</article>
+			</div>
+			{% endfor %}
+		</div>
+	</aside>
+	{% endif %}
+</div>
 
 {% include footer.html %}

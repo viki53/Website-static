@@ -13,8 +13,10 @@ twitter_username: HelyoSphere
 language: "fr"
 timezone: "Europe/Paris"
 encoding: UTF-8
-permalink: /:year/:month/:day/:title:output_ext
-excerpt_separator: ---
+permalink: /articles/:title:output_ext
+excerpt_separator: <!-- /excerpt -->
+paginate: 6
+paginate_path: "/articles/page:num/"
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<main id="main">
+	<div class="container">
+		<h1>Derniers articles</h1>
+
+		<div class="grid forced">
+			{% for post in site.posts %}
+			<div class="cell">
+				<article class="card">
+					<header class="card-header" itemscope itemtype="https://schema.org/BlogPosting">
+						<h2><a href="{{ post.url }}" itemprop="headline">{{ post.title }}</a></h2>
+					</header>
+					<div class="card-content" itemprop="description">
+						{{ post.excerpt }}
+					</div>
+					<footer class="card-footer">
+						<a href="{{ post.url }}" class="more-info">Lire l'article</a>
+					</footer>
+				</article>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</main>
+
+{% include footer.html %}
