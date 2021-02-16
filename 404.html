@@ -1,0 +1,66 @@
+---
+layout: page
+title: "Page non trouvée"
+---
+<article class="container">
+	<header>
+		<h1>Page non trouvée</h1>
+
+		<p class="intro">La page ou le document que vous cherchez n'a pas été trouvé.</p>
+	</header>
+
+	<section>
+		<div class="center">
+			<img src="{{ '/images/we-fucking-super-lost.gif' | relative_url }}" alt="" aria-hidden="true">
+		</div>
+	</section>
+
+	<div class="grid">
+		<div class="cell">
+			<section class="card">
+				<header class="card-header">
+					<h2>Liens utiles</h2>
+				</header>
+				<nav class="card-content">
+					<ul>
+						<li>
+							<a href="{{ '/' | relative_url }}">Page d'accueil</a>
+						</li>
+						<li>
+							<a href="{{ '/services-developpement-web.html' | relative_url }}">Mes services en développement Web</a>
+						</li>
+						<li>
+							<a href="{{ '/qualite-web.html' | relative_url }}">Qu'est-ce que la qualité Web ?</a>
+						</li>
+						<li>
+							<a href="{{ '/avis-temoignages-clients.html' | relative_url }}">Avis et témoignages clients</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+		<div class="cell">
+			<section class="card">
+				<header class="card-header">
+					<h2>Me contacter</h2>
+				</header>
+				<nav class="card-content">
+					<ul>
+						<li>
+							<a href="mailto:{{ site.email }}" rel="noindex nofollow">E-mail</a>
+						</li>
+						<li>
+							<a href="tel:{{ site.phone }}" rel="noindex nofollow">Téléphone</a>
+						</li>
+						<li>
+							<a href="https://github.com/viki53" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
+						</li>
+						<li>
+							<a href="https://www.malt.fr/profile/corentinhatte" target="_blank" rel="noopener noreferrer">Profil Malt</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+	</div>
+</article>
