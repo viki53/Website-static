@@ -48,6 +48,10 @@ body {
 	background-color: #fafaf7;
 	min-height: calc(100vh - 8rem);
 
+	[id] {
+		scroll-margin-top: 0.5rem;
+	}
+
 	#navbar + & {
 		min-height: calc(100vh - 3rem - 8rem);
 	}

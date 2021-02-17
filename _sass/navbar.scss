@@ -16,6 +16,10 @@
 
 	& + #main {
 		margin-top: 3rem;
+
+		[id] {
+			scroll-margin-top: 3.5rem;
+		}
 	}
 
 	a {
