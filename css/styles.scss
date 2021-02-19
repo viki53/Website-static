@@ -11,6 +11,8 @@
 
 	--font-titles: 'San Francisco', 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Segoe UI', 'Tahoma', 'Roboto', 'Droid Sans', sans-serif;
 	--font-text: Georgia, Times, 'Times New Roman', serif;
+
+	--card-radius: 3px;
 }
 
 *,
@@ -76,9 +78,5 @@ body {
 				text-decoration: none;
 			}
 		}
-	}
-	h2 {
-		padding-bottom: .25em;
-		border-bottom: 1px dashed var(--color-helyo-orange);
 	}
 }
