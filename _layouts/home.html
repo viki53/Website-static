@@ -24,12 +24,12 @@ layout: default
 		{{ content }}
 	</main>
 
-	{% if paginator.posts %}
+	{% if site.posts %}
 	<aside class="container">
 		<h1>Derniers articles</h1>
 
 		<div class="grid forced">
-			{% for post in paginator.posts %}
+			{% for post in site.posts limit:4 %}
 			<div class="cell">
 				<article class="card" itemscope itemtype="https://schema.org/BlogPosting">
 					<header class="card-header">
