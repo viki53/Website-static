@@ -55,9 +55,11 @@ a {
 	&.more-info {
 		display: block;
 		padding: .5em;
+		text-align: right;
 		font-size: 1.3em;
 		font-family: var(--font-titles);
 		border-bottom: 1px dashed var(--color-helyo-blue);
+		background-color: #fcfcfc;
 
 		@media screen and (max-width: 39.99rem) {
 			border: 1px solid var(--color-helyo-blue);
