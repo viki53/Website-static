@@ -4,7 +4,7 @@
 
 :root {
 	--color-text: #292f36;
-	--color-bg: #fafaf7;
+	--color-bg: #fff;
 	--color-shadow: #acacac;
 	--color-helyo-blue: #1786a3;
 	--color-helyo-orange: #ff7f49;
@@ -45,7 +45,7 @@ body {
 	overflow: hidden;
 	position: relative;
 	z-index: 5;
-	background-color: #fafaf7;
+	background-color: var(--color-bg);
 	min-height: calc(100vh - 8rem);
 
 	[id] {
