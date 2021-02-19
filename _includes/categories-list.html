@@ -1,0 +1,16 @@
+{% assign total = include.categories.size %}
+
+{% if total > 1 %}
+	Catégories :
+{% elsif total == 1 %}
+	Catégorie :
+{% endif %}
+
+<span itemprop="keywords">
+{% assign index = 1 %}
+{% for categorySlug in include.categories %}
+{% assign categoryName = site.data.categories[categorySlug] %}
+<a href="/articles/{{categorySlug | slugize}}/">{{ categoryName }}</a>{% if index < (total - 1) %}, {% endif %}
+{% assign index = index | plus:1 %}
+{% endfor %}
+</span>

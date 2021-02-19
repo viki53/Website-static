@@ -28,7 +28,7 @@
 			color: white;
 
 			& > a {
-				&:not(:hover):not(:focus) {
+				&:not(:hover, :focus) {
 					text-decoration: none;
 				}
 			}

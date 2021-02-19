@@ -68,7 +68,7 @@ a {
 			text-align: center;
 
 		}
-		&:not(:hover):not(:focus) {
+		&:not(:hover, :focus) {
 			text-decoration: none;
 		}
 

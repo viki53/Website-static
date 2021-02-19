@@ -18,8 +18,9 @@ layout: default
 			</main>
 
 			<footer class="card-footer post-details">
-				<p title="Date de publication">
-					Article publié le <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date:"%d" }} {% include date-month-localized.html date=page.date %} {{ page.date | date:"%Y" }}</time>.
+				<p>
+					Article publié le <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date:"%d" }} {% include date-month-localized.html date=page.date %} {{ page.date | date:"%Y" }}</time>. 
+					{% include categories-list.html categories=page.categories %}
 				</p>
 
 				<p>
@@ -29,6 +30,10 @@ layout: default
 				</p>
 			</footer>
 		</div>
+
+		{% if page.previous %}
+		<a href="{{ page.previous.url }}" class="more-info">Article précédent ({{ page.previous.title }})</a>
+		{% endif %}
 	</div>
 </article>
 

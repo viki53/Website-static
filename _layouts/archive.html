@@ -6,10 +6,19 @@ layout: default
 
 <main id="main">
 	<div class="container">
-		<h1>Derniers articles</h1>
+		{{ content }}
+		
+		{% if page.type == 'category' %}
+		{% assign posts = page.posts %}
+		{% assign categoryName = site.data.categories[page.title] %}
+		<h1>Archives dans la catégorie "<em>{{ categoryName }}</em>"</h1>
+		{% else %}
+		{% assign posts = site.posts %}
+		<h1>Archives des articles publiés</h1>
+		{% endif %}
 
 		<div class="grid forced">
-			{% for post in site.posts %}
+			{% for post in posts %}
 			<div class="cell">
 				<article class="card">
 					<header class="card-header" itemscope itemtype="https://schema.org/BlogPosting">

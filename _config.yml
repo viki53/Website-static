@@ -13,7 +13,7 @@ twitter_username: HelyoSphere
 language: "fr"
 timezone: "Europe/Paris"
 encoding: UTF-8
-permalink: /articles/:title:output_ext
+permalink: /articles/:categories/:title:output_ext
 excerpt_separator: <!-- /excerpt -->
 paginate: 6
 paginate_path: "/articles/page:num/"
@@ -37,10 +37,7 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    category: '/categorie/:name/'
+    category: '/articles/:name/'
 
 feed:
   path: atom.xml

@@ -1,10 +1,7 @@
 .post {
-	.post-intro {
-		// border-bottom: 1px dashed var(--color-helyo-orange);
-	}
 	.post-details {
-		padding: 1rem 0 0;
-		border-top: 1px dashed var(--color-helyo-orange);
+		padding: 1rem;
+		border-top: 1px solid var(--color-helyo-blue);
 
 		p {
 			margin: .5rem 0;
@@ -14,6 +11,18 @@
 		}
 		p:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	.share-button {
+		display: inline-block;
+		padding: .25em .5em;
+		color: var(--color-helyo-orange);
+		border: 1px solid var(--color-helyo-blue);
+		border-radius: var(--card-radius);
+
+		&:not(:hover, :focus) {
+			text-decoration: none;
 		}
 	}
 }
