@@ -14,10 +14,10 @@ title: "Mentions légales"
 			<h2>Contact</h2>
 		</header>
 
-		<div class="card-content">
+		<div class="card-content" itemscope itemtype="https://schema.org/Organization">
 			<address>
-				<p>
-					EURL Helyo Sphere<br>
+				<p itemprop="name">EURL Helyo Sphere</p>
+				<p itemprop="address">
 					Le Marais<br>
 					35760 Montgermont<br>
 					France
@@ -33,9 +33,9 @@ title: "Mentions légales"
 				immatriculée au <abbr title="Registre du commerce et des sociétés françaises">RCS</abbr> de Rennes sous le numéro <em>B 831 241 740</em>.
 			</p>
 			
-			<p>Email : <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+			<p>Email : <a href="mailto:{{ site.email }}" itemprop="email">{{ site.email }}</a></p>
 			
-			<p>Téléphone : <a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
+			<p>Téléphone : <a href="tel:{{ site.phone }}" itemprop="telephone">{{ site.phone }}</a></p>
 		</div>
 	</section>
 
