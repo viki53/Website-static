@@ -4,7 +4,7 @@
 
 :root {
 	--color-text: #292f36;
-	--color-bg: #fff;
+	--color-bg: #fafaf7;
 	--color-shadow: #acacac;
 	--color-helyo-blue: #1786a3;
 	--color-helyo-orange: #ff7f49;
@@ -65,8 +65,9 @@ body {
 	}
 
 	.container {
-		margin: 2rem auto;
-		padding: 0 .5rem;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+		background-color: #fff;
 	}
 
 	h1:first-child {
