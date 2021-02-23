@@ -19,15 +19,17 @@
 	& > .card-header {
 		flex: 0;
 		justify-self: flex-start;
+		border-bottom: 4px solid var(--color-helyo-orange);
 
 		h1,
 		h2 {
 			margin: 0;
 			padding: 1rem;
-			background-color: var(--color-helyo-orange);
-			color: white;
+			border: 0;
 
 			& > a {
+				display: block;
+
 				&:not(:hover, :focus) {
 					text-decoration: none;
 				}
@@ -41,6 +43,7 @@
 	& > .card-footer {
 		flex: 0;
 		justify-self: flex-end;
+		background-color: #fcfcfc;
 	}
 
 	a.more-info {
