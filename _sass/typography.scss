@@ -48,6 +48,16 @@ li {
 		content: '• ';
 		color: var(--color-helyo-orange);
 	}
+
+	&.current {
+		&::before {
+			color: var(--color-helyo-blue);
+		}
+
+		a:not(:hover, :focus) {
+			text-decoration: none;
+		}
+	}
 }
 
 a {

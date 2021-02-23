@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div id="main">
+	<main class="container">
+		{{ content }}
+
+		<aside class="card">
+			<header class="card-header">
+				<h2>Mes services :</h2>
+			</header>
+
+			{% assign mypages = site.pages | where:"dir", "/services/" | sort:"order" %}
+			<nav class="card-content">
+				<ul class="pages-list">
+					{% for p in mypages %}
+					<li{% if p.url==page.url %} class="current" {% endif %}>
+						<a href="{{ p.url }}" {% if p.url==page.url %} rel="canonical" {% endif %}>{{ p.title }}</a>
+						</li>
+						{% endfor %}
+				</ul>
+			</nav>
+		</aside>
+	</main>
+</div>
+
+{% include footer.html %}
