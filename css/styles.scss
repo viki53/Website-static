@@ -53,17 +53,6 @@ body {
 	background-color: var(--color-bg);
 	min-height: calc(100vh - 8rem);
 
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: calc(50% - (var(--size-container) / 2));
-		height: 100%;
-		width: var(--size-container);
-		z-index: 0;
-		background-color: #fff;
-	}
-
 	& > * {
 		position: relative;
 		z-index: 1;
@@ -86,7 +75,6 @@ body {
 	.container {
 		margin: 0 auto;
 		padding: 2rem 1rem;
-		background-color: #fff;
 	}
 
 	h1:first-child {
