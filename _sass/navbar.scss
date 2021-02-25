@@ -23,14 +23,10 @@
 	}
 
 	a {
-		display: block;
 		flex: 0 0 auto;
-		padding: .5rem;
+		margin: .25em 0;
+		padding: .25em .75em;
 		font-family: var(--font-titles);
-
-		&:not(:hover, :focus) {
-			text-decoration: none;
-		}
 
 		&.icon {
 			&::before {
@@ -48,7 +44,7 @@
 			&:focus {
 				&::before {
 					border-radius: 4px;
-					background-color: rgba(255, 255, 255, .3);
+					background-color: var(--color-navlink-bg);
 				}
 			}
 			&.email::before {
@@ -56,6 +52,22 @@
 			}
 			&.phone::before {
 				content: '📞';
+			}
+		}
+	}
+
+	.navbar-left,
+	.navbar-right {
+		a {
+			background-color: rgba(255, 255, 255, 0);
+			border-radius: 2em;
+			margin: .25em;
+			transition: all 120ms linear;
+			text-decoration: none;
+			
+			&:hover,
+			&:focus {
+				background-color: var(--color-navlink-bg);
 			}
 		}
 	}
