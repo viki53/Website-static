@@ -73,21 +73,22 @@
 	}
 
 	.navbar-left {
-		flex: 0 1 auto;
+		flex: 0 1 33.3%;
 		display: flex;
 		justify-content: flex-start;
 	}
 	.navbar-center {
-		flex: 1 0 auto;
+		flex: 1 0 33.3%;
 		display: flex;
 		justify-content: center;
 
 		@media screen and (max-width: 39.99rem) {
+			flex-basis: 50%;
 			justify-content: flex-end;
 		}
 	}
 	.navbar-right {
-		flex: 0 1 auto;
+		flex: 0 1 33.3%;
 		display: flex;
 		justify-content: flex-end;
 
