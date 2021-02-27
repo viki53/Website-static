@@ -16,6 +16,20 @@
 		margin-top: 3rem;
 	}
 
+
+	&.announcement {
+		margin-bottom: 2rem;
+
+		& > .card-header {
+			background-color: #69d5f018;
+			text-align: center;
+		}
+		& > .card-content {
+			background-color: #ff7f4918;
+			text-align: center;
+		}
+	}
+
 	& > .card-header {
 		flex: 0;
 		justify-self: flex-start;
