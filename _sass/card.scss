@@ -20,14 +20,17 @@
 	&.announcement {
 		margin-bottom: 2rem;
 		border: 1px solid var(--color-helyo-blue);
+		text-align: center;
 
 		& > .card-header {
-			background-color: #69d5f018;
-			text-align: center;
+			background-color: #69d5f011;
 		}
 		& > .card-content {
-			background-color: #ff7f4918;
-			text-align: center;
+			background-color: #ff7f4911;
+		}
+		& > .card-footer a.more-info {
+			background-color: #69d5f011;
+			text-align: inherit;
 		}
 	}
 
