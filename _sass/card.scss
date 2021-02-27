@@ -19,6 +19,7 @@
 
 	&.announcement {
 		margin-bottom: 2rem;
+		border: 1px solid var(--color-helyo-blue);
 
 		& > .card-header {
 			background-color: #69d5f018;
