@@ -9,6 +9,14 @@
 	flex-flow: column;
 	text-align: center;
 
+	a {
+		color: inherit;
+
+		&:focus {
+			outline-color: var(--color-soft-grey);
+		}
+	}
+
 	& > h1 {
 		font-size: 6.25rem;
 		line-height: 1.2em;
@@ -54,6 +62,13 @@
 			&:focus {
 				border-radius: var(--card-radius);
 				background-color: var(--color-navlink-bg);
+			}
+
+			&:focus {
+				outline: none;
+				border-color: rgba(255, 255,255, 0);
+				background-color: var(--color-navlink-bg);
+				box-shadow: 0 0 0 2px var(--color-helyo-blue), 0 0 0 4px var(--color-soft-grey);
 			}
 		}
 	}

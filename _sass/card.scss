@@ -29,7 +29,9 @@
 			background-color: #ff7f4911;
 		}
 		& > .card-footer a.more-info {
-			background-color: #69d5f011;
+			&:not(:focus) {
+				background-color: #69d5f011;
+			}
 			text-align: inherit;
 		}
 	}
@@ -47,8 +49,9 @@
 
 			& > a {
 				display: block;
+				color: inherit;
 
-				&:not(:hover, :focus) {
+				&:not(:hover) {
 					text-decoration: none;
 				}
 			}

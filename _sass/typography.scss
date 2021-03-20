@@ -60,9 +60,18 @@ li {
 	}
 }
 
+::-moz-focus-inner {
+	border: 0;
+}
+
 a {
-	color: inherit;
+	color: var(--color-helyo-orange);
 	text-decoration-thickness: 1px;
+
+	&:focus {
+		text-decoration: none;
+		outline: 3px solid var(--color-helyo-blue);
+	}
 
 	&.more-info {
 		display: block;
@@ -71,14 +80,20 @@ a {
 		font-size: 1.3em;
 		font-family: var(--font-titles);
 		background-color: var(--color-soft-grey);
+		color: inherit;
 
 		@media screen and (max-width: 39.99rem) {
 			border: 1px solid var(--color-helyo-blue);
 			text-align: center;
 
 		}
-		&:not(:hover, :focus) {
+		&:not(:hover) {
 			text-decoration: none;
+		}
+		&:focus {
+			outline: none;
+			background-color: var(--color-helyo-blue);
+			color: var(--color-soft-grey);
 		}
 
 		&::after {
